@@ -1,0 +1,35 @@
+{
+  "name": "bigfileupload",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/big-file-upload.umd.js",
+  "module": "dist/big-file-upload.esm.js",
+  "unpkg": "dist/big-file-upload.min.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "pnpm build:browser && pnpm build:es && pnpm build:umd",
+    "build:browser": "rollup --config build/rollup.config.browser.mjs",
+    "build:es": "rollup --config build/rollup.config.es.mjs",
+    "build:umd": "rollup --config build/rollup.config.umd.mjs",
+    "dev": "cross-env NODE_ENV=development rollup --config build/rollup.config.es.mjs --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rollup": "^3.26.2"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.9",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.3",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-replace": "^5.0.2",
+    "cross-env": "^7.0.3",
+    "rollup-plugin-terser": "^7.0.2",
+    "tslib": "^2.6.0"
+  }
+}
