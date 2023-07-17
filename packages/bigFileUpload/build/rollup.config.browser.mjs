@@ -1,11 +1,12 @@
 import base from './rollup.config.base.mjs'
-import {terser} from 'rollup-plugin-terser'
+// import terser from '@rollup/plugin-terser'
 
 const config = Object.assign({}, base, {
     output: {
         exports: 'named',
         name: 'BigFileUpload',
         file: 'dist/big-file-upload.min.js',
+        // file: 'dist/index.d.ts',
         format: 'iife',
         sourcemap: true,
         globals: {
@@ -14,6 +15,6 @@ const config = Object.assign({}, base, {
     }
 })
 
-config.plugins.push(terser())
+// config.plugins.push(terser())
 
 export default config

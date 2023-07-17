@@ -11,7 +11,7 @@ module.exports = {
         "eslint:recommended",
         "prettier"
     ],
-    plugins: [],
+    plugins: ['@typescript-eslint'],
     env: {
         browser: true,
         es6: true,

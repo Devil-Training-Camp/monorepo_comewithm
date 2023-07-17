@@ -8,7 +8,8 @@
     "prepare": "husky install",
     "lint": "lint-staged --allow-empty",
     "prettier": "prettier --write *.{js,md,json,.ts,.tsx} packages/**/*.{js,json,ts,tsx}",
-    "start:big": "pnpm run -C packages/bigFileUpload dev"
+    "start:big": "pnpm run -C packages/bigFileUpload build",
+    "start:server": "pnpm run -C packages/server start"
   },
   "keywords": [],
   "author": "",
@@ -33,6 +34,7 @@
     "lint-staged": "^13.2.3",
     "prettier": "^3.0.0",
     "prettier-eslint-cli": "^7.1.0",
-    "release-it": "^16.1.2"
+    "release-it": "^16.1.2",
+    "rimraf": "^5.0.1"
   }
 }

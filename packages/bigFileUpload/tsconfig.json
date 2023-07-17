@@ -1,4 +1,14 @@
 {
     "extends":"../../tsconfig.json",
+    "compilerOptions": {
+        // "allowImportingTsExtensions": true,
+        "noImplicitAny": false,
+        "declaration": true,
+        "declarationDir": "dist/types",
+        "rootDir": "src",
+        "outDir": "dist",
+        "lib": ["DOM", "DOM.Iterable", "ESNext"],
+        "target": "ESNext",
+    },
     "include": ["src"]
 }
