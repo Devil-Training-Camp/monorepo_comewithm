@@ -9,7 +9,9 @@
     "lint": "lint-staged --allow-empty",
     "prettier": "prettier --write *.{js,md,json,.ts,.tsx} packages/**/*.{js,json,ts,tsx}",
     "start:big": "pnpm run -C packages/bigFileUpload build",
-    "start:server": "pnpm run -C packages/server start"
+    "start:browser": "pnpm run -C packages/bigFileUpload dev:browser",
+    "start:server": "pnpm run -C packages/server start",
+    "start:demo": "pnpm run -C packages/demo start"
   },
   "keywords": [],
   "author": "",

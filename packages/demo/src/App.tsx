@@ -1,10 +1,12 @@
 import './App.css';
 
+// import { UploadFile } from './components/UploadFile';
 import {UploadFile} from 'bigfileupload'
+
 
 function App() {
   return <div className='App'>
-    App
+    APP
     <UploadFile />
   </div>;
 }

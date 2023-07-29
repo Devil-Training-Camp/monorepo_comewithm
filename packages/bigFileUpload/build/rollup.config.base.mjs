@@ -5,7 +5,6 @@ import replace from '@rollup/plugin-replace'
 import postcss from 'rollup-plugin-postcss'
 import autoprefixer from 'autoprefixer'
 import typescript from '@rollup/plugin-typescript';
-import dts from 'rollup-plugin-dts';
 
 export default {
     input: 'src/index.ts',
@@ -16,7 +15,7 @@ export default {
         babel({
             exclude: 'node_modules/**',
             extensions: ['.js', '.ts', '.jsx', '.tsx'],
-            babelHelpers: 'bundled'
+            // babelHelpers: 'runtime'
         }),
         cjs({
             include: /node_modules/
@@ -27,7 +26,6 @@ export default {
         replace({
             preventAssignment: true
         }),
-        dts(),
         typescript(),
     ],
     watch: {

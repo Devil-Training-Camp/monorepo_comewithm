@@ -14,7 +14,10 @@
     "build:es": "rollup --config build/rollup.config.es.mjs",
     "build:umd": "rollup --config build/rollup.config.umd.mjs",
     "dev": "pnpm clean:dist && cross-env NODE_ENV=development rollup --config build/rollup.config.es.mjs --watch",
-    "tsc": "pnpm clean:dist && tsc src/index.ts"
+    "tsc": "pnpm clean:dist && tsc src/index.ts",
+    "dev:browser": "pnpm clean:dist && pnpm build:browser",
+    "dev:es": "pnpm clean:dist && pnpm build:es",
+    "dev:umd": "pnpm clean:dist && pnpm build:umd"
   },
   "keywords": [],
   "author": "",
