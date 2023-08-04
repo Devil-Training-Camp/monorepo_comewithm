@@ -1,14 +1,14 @@
 import './App.css';
 
-// import { UploadFile } from './components/UploadFile';
-import {UploadFile} from 'bigfileupload'
-
+import { UploadFile } from './components/upload/UploadFile';
+// import {UploadFile} from 'bigfileupload'
 
 function App() {
-  return <div className='App'>
-    APP
-    <UploadFile />
-  </div>;
+  return (
+    <div className='App'>
+      <UploadFile />
+    </div>
+  );
 }
 
 export default App;
